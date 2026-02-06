@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>G.A.N.D.A.R.A Party | SSLG Campaign</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --pink-main: #ff6fae;
+    --pink-dark: #e84c93;
+    --text-dark: #3a3a3a;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ffe6f1, #ffd1e8);
+    color: var(--text-dark);
+    line-height: 1.7;
+}
+
+/* HERO */
+header {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(232,76,147,0.65), rgba(232,76,147,0.65)),
+        url("hero-photo.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 3.6rem;
+    letter-spacing: 4px;
+    animation: fadeDown 1.2s ease;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 12px;
+    animation: fadeUp 1.2s ease;
+}
+
+/* SECTIONS */
+section {
+    padding: 90px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2 {
+    color: var(--pink-dark);
+    font-size: 2.3rem;
+    margin-bottom: 30px;
+}
+
+/* SPLIT */
+.split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+/* IMAGES */
+img {
+    width: 100%;
+    border-radius: 28px;
+    box-shadow: 0 20px 40px rgba(232,76,147,0.25);
+    transition: transform 0.6s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* HIGHLIGHT */
+.highlight {
+    background: linear-gradient(135deg, var(--pink-main), var(--pink-dark));
+    color: white;
+    border-radius: 45px;
+    padding: 90px 45px;
+}
+
+.highlight h2 {
+    color: white;
+}
+
+/* TEAM */
+.profile {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.profile h3 {
+    color: var(--pink-dark);
+    font-size: 1.5rem;
+}
+
+/* WHY CHOOSE */
+.why ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.why li {
+    margin-bottom: 15px;
+    padding-left: 28px;
+    position: relative;
+}
+
+.why li::before {
+    content: "✦";
+    position: absolute;
+    left: 0;
+    color: var(--pink-dark);
+}
+
+/* FOOTER */
+footer {
+    background: linear-gradient(135deg, var(--pink-dark), var(--pink-main));
+    color: white;
+    text-align: center;
+    padding: 35px;
+    margin-top: 70px;
+}
+
+/* ANIMATION */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .split,
+    .profile {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div>
+        <h1>G.A.N.D.A.R.A PARTY</h1>
+        <p><strong>Growth • Advocacy • Nurture • Development • Action • Responsibility • Accountability</strong></p>
+        <p>Leadership that listens. Action that matters.</p>
+    </div>
+</header>
+
+<section class="reveal">
+    <div class="split">
+        <div>
+            <h2>Who We Are</h2>
+            <p>
+                G.A.N.D.A.R.A is more than a party — it is a commitment to
+                leadership rooted in empathy, responsibility, and action.
+            </p>
+            <p>
+                We believe student leadership should not only speak,
+                but listen, understand, and respond with purpose.
+            </p>
+        </div>
+        <img src="c:\Users\User\OneDrive\Pictures\wallpeper.jpg">
+    </div>
+</section>
+
+<section class="highlight reveal">
+    <div class="split">
+        <div>
+            <h2>Our Mission & Vision</h2>
+            <p>
+                To build a school environment where every student feels
+                heard, supported, and empowered to grow.
+            </p>
+            <p>
+                We envision an SSLG that values transparency, unity,
+                and meaningful student participation.
+            </p>
+        </div>
+        <img src="students-photo.jpg">
+    </div>
+</section>
+
+<section class="reveal">
+    <h2>Meet the Candidates</h2>
+
+    <div class="profile">
+        <img src="c:\Users\User\OneDrive\Pictures\59e735febca3ff9bf81244068ebb7f92 (1).jpg">
+        <div>
+            <h3>John Miguel Igot — President</h3>
+            <ul>
+                <li>Experienced and decisive student leader</li>
+                <li>Advocates inclusive and transparent leadership</li>
+                <li>Strong communicator and listener</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="profile">
+        <img src="vp.jpg">
+        <div>
+            <h3>Zabate — Vice President</h3>
+            <ul>
+                <li>Reliable and supportive leader</li>
+                <li>Dedicated to student welfare</li>
+                <li>Strong organizational skills</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="profile">
+        <img src="secretary.jpg">
+        <div>
+            <h3>Charmane Gerong — Secretary</h3>
+            <ul>
+                <li>Detail-oriented and organized</li>
+                <li>Excellent documentation skills</li>
+                <li>Efficient and responsible</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="profile">
+        <img src="assistant-secretary.jpg">
+        <div>
+            <h3>Jey Campillo — Assistant Secretary</h3>
+            <ul>
+                <li>Dependable and proactive</li>
+                <li>Strong time-management skills</li>
+                <li>Supports smooth coordination</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="profile">
+        <img src="treasurer.jpg">
+        <div>
+            <h3>Kirstinne Balmores — Treasurer</h3>
+            <ul>
+                <li>Trustworthy and transparent</li>
+                <li>Skilled in budgeting</li>
+                <li>Financially responsible</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="profile">
+        <img src="assistant-treasurer.jpg">
+        <div>
+            <h3>Shenne Martin Bastida — Assistant Treasurer</h3>
+            <ul>
+                <li>Detail-oriented</li>
+                <li>Supports financial documentation</li>
+                <li>Reliable team member</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="profile">
+        <img src="auditor.jpg">
+        <div>
+            <h3>Vassel Monterola — Auditor</h3>
+            <ul>
+                <li>Ensures accountability</li>
+                <li>Fair and objective</li>
+                <li>Ethical leadership</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="profile">
+        <img src="pio-internal.jpg">
+        <div>
+            <h3>Haicy Cahutay — PIO (Internal)</h3>
+            <ul>
+                <li>Strengthens student communication</li>
+                <li>Approachable and engaging</li>
+                <li>Reliable information flow</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="profile">
+        <img src="pio-external.jpg">
+        <div>
+            <h3>Dinah Brennan — PIO (External)</h3>
+            <ul>
+                <li>Represents students externally</li>
+                <li>Clear and professional communicator</li>
+                <li>Builds strong connections</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="reveal why">
+    <div class="split">
+        <div>
+            <h2>Why Choose G.A.N.D.A.R.A</h2>
+            <ul>
+                <li>Leadership rooted in integrity and accountability</li>
+                <li>Student-centered decisions, not empty promises</li>
+                <li>Clear communication between students and leaders</li>
+                <li>Action-driven platforms that create real impact</li>
+                <li>A team united by purpose, not position</li>
+            </ul>
+        </div>
+        <img src="group-photo.jpg">
+    </div>
+</section>
+
+<footer>
+    <p>G.A.N.D.A.R.A Party © 2026 | Leadership With Purpose</p>
+</footer>
+
+<script>
+const reveals = document.querySelectorAll('.reveal');
+window.addEventListener('scroll', () => {
+    reveals.forEach(section => {
+        const top = section.getBoundingClientRect().top;
+        const trigger = window.innerHeight - 100;
+        if (top < trigger) section.classList.add('show');
+    });
+});
+</script>
+
+</body>
+</html>
